@@ -1,0 +1,36 @@
+.container {
+    background-color: #eee;
+    padding:20px 168px 20px 244px;
+    border: solid 2px #999;
+    overflow: hidden;
+}
+.middle {
+    float: left;
+    border: solid 2px #999;
+    width: 100%;
+}
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+    border: solid 2px #999;
+    margin-left: -100%;
+    position: relative;
+    left: -230px;
+}
+.right {
+    float: left;
+    width: 120px;
+    height: 800px;
+    border: solid 2px #999;
+    margin-left: -128px;
+    position: relative;
+    right: -150px;
+}
+img {
+    width: 100px;
+    heigt: 100px
+}
+.left p {
+    float: right;
+}
