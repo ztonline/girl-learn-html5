@@ -1,0 +1,26 @@
+.square {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 200px;
+    width: 400px;
+    background-color: #ccc;
+}
+.top-left-circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 0 0 50px 0;
+    background-color: yellow;
+}
+.bottom-right-circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px 0 0 0;
+    background-color: yellow;
+    position:absolute;
+    bottom: 0px;
+    right: 0px;
+}
