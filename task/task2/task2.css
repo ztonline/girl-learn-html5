@@ -1,0 +1,142 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    background-color: #DEDEDE;
+}
+header {
+    background-color: #333333;
+    height: 80px;
+}
+header img {
+    height: 80px;
+    width: 10%;
+}
+header nav {
+	float: right;
+	line-height: 80px;
+}
+header li {
+	display: inline;
+	margin-right: 5px;
+}
+header li a {
+	text-decoration: none;
+	color: white;
+}
+header a:hover {
+	color: #cecece;
+}
+article {
+	margin: 40px;
+	background-color: white;
+	padding: 20px 16px;
+}
+h2 {
+	font-weight: bolder;
+	font-size: 30px;
+	margin: 30px 0px;
+}
+h3 {
+	font-weight:lighter;
+	font-size: 24px;
+	margin: 24px 0px;
+}
+p {
+	font-size: 16px;
+	line-height: 28px;
+	margin: 5px 0px;
+	text-indent: 2em;
+}
+.info {
+	margin-bottom: 20px;
+}
+.author, .time {
+	color: #9A8C99;
+}
+.image-container {
+	height: 500px;
+}
+.image-container img {
+	width: 400px;
+	height: auto;
+	display: block;
+	margin: 50px auto;
+}
+.second li {
+	height: 30px;
+}
+.collection div {
+	width: 400px;
+	/*height: 400px;*/
+	margin: 20px 100px;
+	border: solid 1px #CBCBCB;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.collection p{
+	text-align: center;
+}
+.collection img {
+	width: 360px;
+	display: block;
+	margin: auto;
+}
+.last ol {
+	list-style:decimal;
+	margin-left: 22px;
+}
+.last li {
+	line-height: 36px;
+}
+.sidebar-container {
+ 	margin-left: 240px;
+}
+.sidebar h2 {
+	border-left: solid 4px #CDCDCD;
+}
+.sidebar label {
+	width: 35%;
+	text-align: right;
+	float: left;
+}
