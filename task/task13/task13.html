@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>task13-js01</title>
+    </head>
+    <body>
+        <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+        <button id="button">确认填写</button>
+
+        <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+        <script type="text/javascript">
+            (function() {
+                /*
+                在注释下方写下代码
+                给按钮button绑定一个点击事件
+                在事件处理函数中
+                获取aqi-input输入的值，并显示在aqi-display中
+                */
+                // var $ = function (id) {
+                //     return document.getElementById(id);
+                // }
+                // var capture = function () {
+                //     var num = parseInt($("aqi-input").value);
+                //     if((!isNaN(num)) && (num>=0) && (num<=500) ){
+                //         $("aqi-display").innerHTML = num;
+                //     }else {
+                //         alert($("aqi-input").value + "不是有效的aqi数值")
+                //     }
+                // }
+                // $("button").onclick = function() {
+                //     capture();
+                // }
+                // $("aqi-input").onkeyup = function (event) {
+                //     if(event.keyCode===13){
+                //         capture();
+                //     }
+                //     /* 考虑回车输入的情况*/
+                // }
+                var $ = function(s) {
+                    return document.querySelector(s)
+                }
+                function capture () {
+                    var inputValue = parseInt($("#aqi-input").value);
+                    if((inputValue > 0) && (inputValue <= 500)){
+                        $("#aqi-display").textContent = inputValue;
+                    }else {
+                        alert ("请输入有效数值")
+                    }
+                }
+                $("#button").addEventListener("click", function () {
+                    capture()
+                })
+                $('#aqi-input').addEventListener("keyup", function(event) {
+                    if(event.keyCode === 13){
+                        capture();
+                    }
+                })
+            })();
+        </script>
+
+</html>
